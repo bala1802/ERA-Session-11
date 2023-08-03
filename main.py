@@ -13,6 +13,8 @@ import argparse
 from models.resnet import ResNet18
 from utils import progress_bar
 
+from torchsummary import summary
+
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', action='store_true',
@@ -57,6 +59,10 @@ net = net.to(device)
 if device == 'cuda':
     net = torch.nn.DataParallel(net)
     cudnn.benchmark = True
+
+print("==> Summary of the Model")
+summary(net, input_size=(3, 32, 32))
+
 
 if args.resume:
     # Load checkpoint.
