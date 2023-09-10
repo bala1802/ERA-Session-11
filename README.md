@@ -18,6 +18,10 @@
 
 ![Misclassified_Images](https://github.com/bala1802/ERA-Session-11/assets/22103095/2396d185-5861-4ef5-959b-aaf7d0db3b04)
 
+#### Model Summary:
+
+<img width="437" alt="Screenshot 2023-09-10 at 9 24 45 PM" src="https://github.com/bala1802/ERA-Session-11/assets/22103095/ff9c7771-38f6-4980-b175-6e6fec1fdfc2">
+
 
 
 
